@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Manufacturers</title>
+</head>
+<body>
+    <h1>Write a program to store phone manufacturers (Apple,
+        Samsung, Motorola, Nokia, Sony & Haier) in an array. 
+        Display the following dropdown/select menu in your 
+        browser using document.write() method</h1>
+    <script>
+        // Array of phone manufacturers
+        let manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+        // Start building the select dropdown
+        document.write('<select id="manufacturerSelect">');
+
+        // Add options for each manufacturer
+        for (let i = 0; i < manufacturers.length; i++) {
+            document.write('<option value="' + manufacturers[i] + '">' + manufacturers[i] + '</option>');
+        }
+
+        // Close the select dropdown
+        document.write('</select>');
+    </script>
+</body>
+</html>
